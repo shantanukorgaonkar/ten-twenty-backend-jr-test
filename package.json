@@ -1,0 +1,41 @@
+{
+  "name": "ten-twenty-backend-jr-test",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "serve": "npm run build && npm start",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "create-tables": "node dist/scripts/create-tables.js",
+    "seed-data": "node dist/scripts/seed.js",
+    "setup-db": "npm run build && npm run create-tables && npm run seed-data",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.6.1",
+    "pg": "^8.16.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/luxon": "^3.6.2",
+    "@types/pg": "^8.15.4",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

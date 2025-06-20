@@ -1,0 +1,72 @@
+# Node modules
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# build output (TypeScript compilation)
+# Assumes your tsconfig.json `outDir` is 'dist'
+dist/
+build/
+*.js.map
+*.d.ts
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports (from testing)
+coverage/
+.nyc_output/
+*.lcov
+
+# Environment variables (sensitive information)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and Editor Specific files
+.vscode/        # VS Code
+.idea/          # IntelliJ IDEA, WebStorm, etc.
+*.iml           # IntelliJ IDEA module files
+.DS_Store       # macOS specific files
+Thumbs.db       # Windows specific files
+
+# OS metadata
+.metadata
+.Trash-*
+.Spotlight-V100
+.Trashes
+
+# Other common ignores
+*.tgz           # npm pack output
+.DS_Store
+*.sublime-* # Sublime Text files
+*.bak           # Backup files
+*.swp           # Vim swap files
+*.swo
+
+# You might have these if you use PM2, Docker, etc.
+# pm2 logs
+pm2logs/
+# Docker related
+.dockerignore
+!Dockerfile # Don't ignore Dockerfile itself if it's in the same dir as .gitignore
+!docker-compose.yml # Don't ignore docker-compose.yml itself
+
+# If you generated a Prisma client, you might want to ignore it if it's generated outside of 'node_modules'
+# e.g., if you have `output` in schema.prisma pointing to `src/generated/prisma`
+# src/generated/prisma/

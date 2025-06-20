@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // or "ES2020", "ESNext" for modern features
+    "module": "CommonJS",
+    "outDir": "./dist", // Output directory for compiled JavaScript
+    "rootDir": "./src", // Root directory for your TypeScript source files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables better interoperability for CommonJS modules
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensures consistent casing for file names
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*"], // Include all files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude these directories
+}
